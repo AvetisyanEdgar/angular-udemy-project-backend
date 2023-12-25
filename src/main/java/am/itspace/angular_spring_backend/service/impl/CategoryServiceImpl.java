@@ -1,8 +1,8 @@
-package am.itspace.testproject.service.impl;
+package am.itspace.angular_spring_backend.service.impl;
 
-import am.itspace.testproject.entity.Category;
-import am.itspace.testproject.repository.CategoryRepository;
-import am.itspace.testproject.service.CategoryService;
+import am.itspace.angular_spring_backend.entity.Category;
+import am.itspace.angular_spring_backend.repository.CategoryRepository;
+import am.itspace.angular_spring_backend.service.CategoryService;
 import jakarta.persistence.EntityNotFoundException;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;

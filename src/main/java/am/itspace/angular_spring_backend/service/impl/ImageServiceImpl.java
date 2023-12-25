@@ -1,10 +1,10 @@
-package am.itspace.testproject.service.impl;
+package am.itspace.angular_spring_backend.service.impl;
 
-import am.itspace.testproject.entity.Image;
-import am.itspace.testproject.entity.Post;
-import am.itspace.testproject.repository.ImageRepository;
-import am.itspace.testproject.service.ImageService;
-import am.itspace.testproject.service.PostService;
+import am.itspace.angular_spring_backend.entity.Image;
+import am.itspace.angular_spring_backend.entity.Post;
+import am.itspace.angular_spring_backend.repository.ImageRepository;
+import am.itspace.angular_spring_backend.service.ImageService;
+import am.itspace.angular_spring_backend.service.PostService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
@@ -44,5 +44,26 @@ public class ImageServiceImpl implements ImageService {
             throw new RuntimeException(e.getMessage());
         }
         return null;
+    }
+
+    @Override
+    public Optional<Image> findById(Integer postId) {
+        return imageRepository.findById(postId);
+    }
+
+    @Override
+    public Optional<Image> findByPicUrl(String imageName) {
+        return imageRepository.findByPicUrl(imageName);
+    }
+
+    @Override
+    public Optional<Image> findByPostId(Integer postId) {
+        return imageRepository.findByPostId(postId);
+    }
+
+    @Override
+    public void deleteByPostId(Integer postId) {
+        Optional<Image> byId = imageRepository.findByPostId(postId);
+        byId.ifPresent(imageRepository::delete);
     }
 }

@@ -1,4 +1,4 @@
-package am.itspace.testproject.entity;
+package am.itspace.angular_spring_backend.entity;
 
 import jakarta.persistence.*;
 import jakarta.validation.constraints.NotEmpty;

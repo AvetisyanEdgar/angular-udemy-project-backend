@@ -1,6 +1,6 @@
-package am.itspace.testproject.service;
+package am.itspace.angular_spring_backend.service;
 
-import am.itspace.testproject.entity.Category;
+import am.itspace.angular_spring_backend.entity.Category;
 
 import java.util.List;
 import java.util.Optional;

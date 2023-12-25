@@ -1,10 +1,12 @@
-package am.itspace.testproject.entity;
+package am.itspace.angular_spring_backend.entity;
 
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
+
+import java.time.LocalDateTime;
 
 @Entity
 @AllArgsConstructor
@@ -20,7 +22,8 @@ public class Post {
     private String permalink;
     private String excerpt;
     private String Content;
+    private LocalDateTime createdAt;
     @ManyToOne
     private Category category;
-    private String imageUrl;
+    private String ImageUrl;
 }

@@ -1,12 +1,10 @@
-package am.itspace.testproject.controller;
+package am.itspace.angular_spring_backend.controller;
 
-import am.itspace.testproject.entity.Category;
-import am.itspace.testproject.service.CategoryService;
-import am.itspace.testproject.service.ImageService;
+import am.itspace.angular_spring_backend.entity.Category;
+import am.itspace.angular_spring_backend.service.CategoryService;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.*;
-import org.springframework.web.multipart.MultipartFile;
 
 import java.util.List;
 import java.util.Optional;

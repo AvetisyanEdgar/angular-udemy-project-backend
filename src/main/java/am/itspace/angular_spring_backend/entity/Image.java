@@ -1,4 +1,4 @@
-package am.itspace.testproject.entity;
+package am.itspace.angular_spring_backend.entity;
 
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
@@ -17,6 +17,6 @@ public class Image {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
     private String picUrl;
-    @ManyToOne
+    @OneToOne
     private Post post;
 }

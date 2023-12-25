@@ -1,6 +1,6 @@
-package am.itspace.testproject.repository;
+package am.itspace.angular_spring_backend.repository;
 
-import am.itspace.testproject.entity.Category;
+import am.itspace.angular_spring_backend.entity.Category;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
